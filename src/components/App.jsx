@@ -16,8 +16,9 @@
 // };
 
 import React, { Component } from "react";
-import { FeedBackOptions } from "./FeedBackOptions/FeedBackOptions";
 import { Section } from "./Section";
+import { FeedBackOptions } from "./FeedBackOptions/FeedBackOptions";
+import { Statistic } from "./Statistic";
 
 
 class App extends Component {
