@@ -10,12 +10,12 @@ export const Buttons = styled.div`
 export const Button = styled.button`
     display: block;
     width: 65px;
-    font-size: 10px;
+    font-size: 16px;
     margin-left: 10px;
     padding: 4px;
     text-transform: capitalize;
-    border: 1px solid #6495ED;
+    border: 1px solid blue;
     border-radius: 5px;
-    background: #6495ED;
+    background: blue;
     color: white;
 `;

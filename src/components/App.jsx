@@ -1,49 +1,32 @@
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
+import React, { Component } from 'react';
+import Section from './Section';
+import FeedBackOptions from './FeedBackOptions';
+import Notification from './Notification';
+import Statistic from './Statistic';
 
-import React, { Component } from "react";
-import { Section } from "./Section/Section";
-import { FeedBackOptions } from "./FeedBackOptions/FeedBackOptions";
-import { Statistic } from "./Statistic/Statistic";
-import { Notification } from "./Notification/Notification";
+class App extends Component {
 
-
-export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
     bad: 0
-  }
+  };
 
   onLeaveFeedback = (e) => {
     if (e.target.textContent === "good") {
-      this.serState(prevState => ({
-        good: prevState.good + 1,
-      }));
+      this.setState(prevState => ({
+      good: prevState.good + 1,
+    }));
     } else
       if (e.target.textContent === "neutral") {
-        this.serState(prevState => ({
-          neutral: prevState.neutral + 1,
-        }));
-      } else
+      this.setState(prevState => ({
+      neutral: prevState.neutral + 1,
+  }));
+    } else
         if (e.target.textContent === "bad") {
-          this.serState(prevState => ({
-            bad: prevState.bad + 1,
-          }))
+          this.setState(prevState => ({
+      bad: prevState.bad + 1,
+  }));
         }
   }
 
@@ -63,11 +46,11 @@ export class App extends Component {
 
     return (
       <div>
-        <Section title="Please leave us your frrdback">
+          <Section title="Please leave feedback">
           <FeedBackOptions options={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback} />
-        </Section>
-        <Section title="Statistics">
+          </Section>
+          <Section title="Statistics">
           {total === 0 ? (
             <Notification message="There is no feedback"></Notification>
           ) : (
@@ -77,9 +60,8 @@ export class App extends Component {
           )}
         </Section>
       </div>
-    )
-
-  }
-
-
+    );
 }
+}
+
+export default App;
