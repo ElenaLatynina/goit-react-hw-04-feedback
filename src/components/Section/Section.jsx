@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types;';
+import PropTypes from 'prop-types';
 import { Card, Title } from "./Section.styles";
 
 export const Section = ({ title, children }) => {

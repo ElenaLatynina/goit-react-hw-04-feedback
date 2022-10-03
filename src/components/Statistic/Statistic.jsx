@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types;';
+import PropTypes from 'prop-types';
 import { Option, Options } from './Statistic.styled';
 
 export const Statistic = ({ good, neutral, bad, total,  positivePercentage }) => {
