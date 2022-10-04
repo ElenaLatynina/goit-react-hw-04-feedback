@@ -11,18 +11,18 @@ export class App extends Component {
     bad: 0
   };
 
-  onLeaveFeedback = (e) => {
-    if (e.target.textContent === "good") {
+  onLeaveFeedback = (event) => {
+    if (event.target.textContent === "good") {
       this.setState(prevState => ({
       good: prevState.good + 1,
     }));
     } else
-      if (e.target.textContent === "neutral") {
+      if (event.target.textContent === "neutral") {
       this.setState(prevState => ({
       neutral: prevState.neutral + 1,
   }));
     } else
-        if (e.target.textContent === "bad") {
+        if (event.target.textContent === "bad") {
           this.setState(prevState => ({
       bad: prevState.bad + 1,
   }));

@@ -11,4 +11,5 @@ export const Options = styled.ul`
 export const Option = styled.li`
 padding-bottom: 10px;
 list-style: none;
+font-weight:500;
 `;

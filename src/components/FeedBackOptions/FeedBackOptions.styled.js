@@ -7,7 +7,7 @@ export const Buttons = styled.div`
     align-items: center;
     `;
 
-export const Button = styled.button`
+export const Btn = styled.button`
     display: block;
     width: 65px;
     font-size: 16px;
