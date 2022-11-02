@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
+import { useState } from 'react';
 import { Section } from './Section/Section';
 import {FeedBackOptions} from './FeedBackOptions/FeedBackOptions';
 import {Notification} from './Notification/Notification';
 import { Statistic } from './Statistic/Statistic';
 
-export class App extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0
-  };
+const App = () => {
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
+  
+}
+
+// export class App extends Component {
+//   state = {
+//     good: 0,
+//     neutral: 0,
+//     bad: 0
+//   };
 
   onLeaveFeedback = (Btn) => { this.setState(prevState => ({ [Btn]: prevState[Btn] + 1, })); };
 
