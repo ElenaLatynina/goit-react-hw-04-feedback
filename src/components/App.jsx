@@ -22,9 +22,10 @@ import { Statistic } from './Statistic/Statistic';
       default: return;
 
     }
-  };
+   };
+   
   const totalFeedback = good + neutral + bad;
-  const positiveFeedbackPercentage = Math.floor(good / totalFeedback * 100);
+  const positiveFeedbackPercentage = Math.floor((good / totalFeedback) * 100);
 
 return (
       <div>
@@ -36,8 +37,11 @@ return (
           {totalFeedback === 0 ? (
             <Notification message="There is no feedback"></Notification>
           ) : (
-            <Statistic good={good} neutral={neutral} bad={bad}
-              total={totalFeedback} positivePercentage={positiveFeedbackPercentage}
+          <Statistic
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={totalFeedback} positiveFeedbackPercentage={positiveFeedbackPercentage}
             />
           )}
         </Section>
@@ -47,4 +51,4 @@ return (
   }
 
 
-// export default App;
+export default App;
