@@ -41,7 +41,7 @@ return (
             good={good}
             neutral={neutral}
             bad={bad}
-            total={totalFeedback} positiveFeedbackPercentage={positiveFeedbackPercentage}
+            totalFeedback={totalFeedback} positiveFeedbackPercentage={positiveFeedbackPercentage}
             />
           )}
         </Section>
