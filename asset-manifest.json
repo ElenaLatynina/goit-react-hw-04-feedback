@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ElenaLatynina/goit-react-hw-04-feedback.git/static/css/main.7acaea2f.css",
-    "main.js": "/ElenaLatynina/goit-react-hw-04-feedback.git/static/js/main.acb48e55.js",
+    "main.js": "/ElenaLatynina/goit-react-hw-04-feedback.git/static/js/main.cb79a454.js",
     "index.html": "/ElenaLatynina/goit-react-hw-04-feedback.git/index.html",
     "main.7acaea2f.css.map": "/ElenaLatynina/goit-react-hw-04-feedback.git/static/css/main.7acaea2f.css.map",
-    "main.acb48e55.js.map": "/ElenaLatynina/goit-react-hw-04-feedback.git/static/js/main.acb48e55.js.map"
+    "main.cb79a454.js.map": "/ElenaLatynina/goit-react-hw-04-feedback.git/static/js/main.cb79a454.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.acb48e55.js"
+    "static/js/main.cb79a454.js"
   ]
 }
