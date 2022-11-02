@@ -11,7 +11,7 @@ import { Statistic } from './Statistic/Statistic';
   const [bad, setBad] = useState(0);
   
   const onLeaveFeedback = event => {
-    const option = event.target.value;
+    const option = event.target.name;
     switch (option) {
       case 'good': setGood(prevState => prevState + 1);
         break;
