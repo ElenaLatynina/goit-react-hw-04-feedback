@@ -40,8 +40,8 @@ export const App = () => {
           good={good}
           neutral={neutral}
           bad={bad}
-              totalFeedback={total}
-              positiveFeedback={positiveFeedback}
+          total={total}
+          positiveFeedback={positiveFeedback}
         />
       )}
     </Section>
